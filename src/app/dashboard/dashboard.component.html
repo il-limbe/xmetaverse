@@ -1,11 +1,30 @@
 <div class="grid-container">
   <h1 class="mat-h1">X-Metaverse</h1>
   <mat-grid-list cols="3" rowHeight="350px">
-    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+    <mat-grid-tile [colspan]="1" [rowspan]="2">
       <mat-card class="dashboard-card">
         <mat-card-header>
           <mat-card-title>
-            {{card.title}}
+            Skills
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          TODO
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Wolverine
             <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
               <mat-icon>more_vert</mat-icon>
             </button>
@@ -18,7 +37,8 @@
         <mat-card-content class="dashboard-card-content">
           <model-viewer
             alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
-            src="../assets/NeilArmstrong.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster
+            src="../assets/NeilArmstrong.glb" ar ar-modes="webxr scene-viewer quick-look"
+            environment-image="../assets/moon_1k.hdr" poster="../assets/NeilArmstrong.webp" seamless-poster
             shadow-intensity="1" camera-controls></model-viewer>
         </mat-card-content>
       </mat-card>
