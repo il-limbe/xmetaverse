@@ -1,12 +1,19 @@
 <div class="grid-container">
-  <h1 class="mat-h1">X-Metaverse</h1>
+  <div class="header">
+    <p class="">Reply X-Metaverse</p>
+  </div>
   <mat-grid-list cols="3" rowHeight="350px">
     <mat-grid-tile [colspan]="1" [rowspan]="2">
       <mat-card class="dashboard-card">
         <mat-card-header>
           <mat-card-title>
             Skills
-            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+            <button
+              mat-icon-button
+              class="more-button"
+              [matMenuTriggerFor]="menu"
+              aria-label="Toggle menu"
+            >
               <mat-icon>more_vert</mat-icon>
             </button>
             <mat-menu #menu="matMenu" xPosition="before">
@@ -25,7 +32,12 @@
         <mat-card-header>
           <mat-card-title>
             Wolverine
-            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+            <button
+              mat-icon-button
+              class="more-button"
+              [matMenuTriggerFor]="menu"
+              aria-label="Toggle menu"
+            >
               <mat-icon>more_vert</mat-icon>
             </button>
             <mat-menu #menu="matMenu" xPosition="before">
@@ -35,29 +47,48 @@
           </mat-card-title>
         </mat-card-header>
         <mat-card-content class="dashboard-card-content height-card">
-          <model-viewer class="model-size"
+          <model-viewer
+            class="model-size"
             alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
-            src="../assets/wolverine.glb" ar ar-modes="webxr scene-viewer quick-look" poster="../assets/wolverine.webp"
-            seamless-poster shadow-intensity="1" camera-controls>
-            <button class="Hotspot" slot="hotspot-1"
+            src="../assets/wolverine.glb"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            poster="../assets/wolverine.webp"
+            seamless-poster
+            shadow-intensity="1"
+            camera-controls
+          >
+            <button
+              class="Hotspot"
+              slot="hotspot-1"
               data-position="-0.26279521260632466m 1.2337995478099333m -0.965276081073283m"
               data-normal="-0.02641672046978641m 0.36757895756165004m -0.9296170538654677m"
-              data-visibility-attribute="visible">
-              <div class="HotspotAnnotation">Sharp claws</div>
-            </button><button class="Hotspot" slot="hotspot-2"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Sharp claws</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-2"
               data-position="0.11930905946301218m 2.380669573602074m 0.13035354227854867m"
               data-normal="-0.23376480028846375m 0.06776197131089154m 0.9699290352341023m"
-              data-visibility-attribute="visible">
-              <div class="HotspotAnnotation">Super hearing</div>
-            </button><button class="Hotspot" slot="hotspot-3"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Super hearing</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-3"
               data-position="0.07617301394129283m 0.3311708597372396m -0.33827086739725787m"
               data-normal="-0.8183378805672092m -0.13882031692694033m 0.5577203894758306m"
-              data-visibility-attribute="visible">
-              <div class="HotspotAnnotation">Killer kick</div>
-            </button><button class="Hotspot" slot="hotspot-4"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Killer kick</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-4"
               data-position="0.23934806495746308m 1.6750535781484372m -0.014068364286948909m"
               data-normal="0.7731934352329117m -0.4913325730110659m 0.40095413005860736m"
-              data-visibility-attribute="visible">
+              data-visibility-attribute="visible"
+            >
               <div class="HotspotAnnotation">Adamantium skeleton</div>
             </button>
           </model-viewer>
