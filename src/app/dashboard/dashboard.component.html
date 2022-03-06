@@ -1,6 +1,10 @@
 <div class="grid-container">
   <div class="header">
-    <p class="">Reply X-Metaverse</p>
+    <p class="logo">Reply X-Metaverse</p>
+    <div class="right-items">
+      <p class="item" style="">Start your journey</p>
+      <p class="item" style="padding-right: 25px">Wallet</p>
+    </div>
   </div>
   <mat-grid-list cols="3" rowHeight="350px">
     <mat-grid-tile [colspan]="2" [rowspan]="2">
@@ -8,7 +12,12 @@
         <mat-card-header>
           <mat-card-title>
             <span style="font-size: 22px">Wolverine</span>
-            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+            <button
+              mat-icon-button
+              class="more-button"
+              [matMenuTriggerFor]="menu"
+              aria-label="Toggle menu"
+            >
               <mat-icon>more_vert</mat-icon>
             </button>
             <mat-menu #menu="matMenu" xPosition="before">
@@ -18,29 +27,48 @@
           </mat-card-title>
         </mat-card-header>
         <mat-card-content class="dashboard-card-content height-card">
-          <model-viewer class="model-size"
+          <model-viewer
+            class="model-size"
             alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
-            src="../assets/wolverine.glb" ar ar-modes="webxr scene-viewer quick-look" poster="../assets/wolverine.webp"
-            seamless-poster shadow-intensity="1" camera-controls>
-            <button class="Hotspot" slot="hotspot-1"
+            src="../assets/wolverine.glb"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            poster="../assets/wolverine.webp"
+            seamless-poster
+            shadow-intensity="1"
+            camera-controls
+          >
+            <button
+              class="Hotspot"
+              slot="hotspot-1"
               data-position="-0.26279521260632466m 1.2337995478099333m -0.965276081073283m"
               data-normal="-0.02641672046978641m 0.36757895756165004m -0.9296170538654677m"
-              data-visibility-attribute="visible">
-              <div class="HotspotAnnotation">Sharp claws</div>
-            </button><button class="Hotspot" slot="hotspot-2"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Sharp claws</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-2"
               data-position="0.11930905946301218m 2.380669573602074m 0.13035354227854867m"
               data-normal="-0.23376480028846375m 0.06776197131089154m 0.9699290352341023m"
-              data-visibility-attribute="visible">
-              <div class="HotspotAnnotation">Super hearing</div>
-            </button><button class="Hotspot" slot="hotspot-3"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Super hearing</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-3"
               data-position="0.07617301394129283m 0.3311708597372396m -0.33827086739725787m"
               data-normal="-0.8183378805672092m -0.13882031692694033m 0.5577203894758306m"
-              data-visibility-attribute="visible">
-              <div class="HotspotAnnotation">Killer kick</div>
-            </button><button class="Hotspot" slot="hotspot-4"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Killer kick</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-4"
               data-position="0.23934806495746308m 1.6750535781484372m -0.014068364286948909m"
               data-normal="0.7731934352329117m -0.4913325730110659m 0.40095413005860736m"
-              data-visibility-attribute="visible">
+              data-visibility-attribute="visible"
+            >
               <div class="HotspotAnnotation">Adamantium skeleton</div>
             </button>
           </model-viewer>
@@ -52,7 +80,12 @@
         <mat-card-header>
           <mat-card-title>
             <span style="font-size: 22px">Skills</span>
-            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+            <button
+              mat-icon-button
+              class="more-button"
+              [matMenuTriggerFor]="menu"
+              aria-label="Toggle menu"
+            >
               <mat-icon>more_vert</mat-icon>
             </button>
             <mat-menu #menu="matMenu" xPosition="before">
@@ -67,8 +100,8 @@
             <mat-grid-tile [colspan]="1" [rowspan]="1"> </mat-grid-tile>
           </mat-grid-list>
           <mat-grid-list cols="2" rowHeight="50px">
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-              Strength
+            <mat-grid-tile class="skill-item" [colspan]="1" [rowspan]="1">
+              <span>Strength</span>
             </mat-grid-tile>
             <mat-grid-tile [colspan]="1" [rowspan]="1">
               <mat-icon class="green">circle</mat-icon>
@@ -79,8 +112,8 @@
             </mat-grid-tile>
           </mat-grid-list>
           <mat-grid-list cols="2" rowHeight="50px">
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-              Velocity
+            <mat-grid-tile class="skill-item" [colspan]="1" [rowspan]="1">
+              <span>Speed</span>
             </mat-grid-tile>
             <mat-grid-tile [colspan]="1" [rowspan]="1">
               <mat-icon class="green">circle</mat-icon>
@@ -91,8 +124,8 @@
             </mat-grid-tile>
           </mat-grid-list>
           <mat-grid-list cols="2" rowHeight="50px">
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-              Intelligence
+            <mat-grid-tile class="skill-item" [colspan]="1" [rowspan]="1">
+              <span>Intelligence</span>
             </mat-grid-tile>
             <mat-grid-tile [colspan]="1" [rowspan]="1">
               <mat-icon class="green">circle</mat-icon>
@@ -103,8 +136,8 @@
             </mat-grid-tile>
           </mat-grid-list>
           <mat-grid-list cols="2" rowHeight="50px">
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-              Resilience
+            <mat-grid-tile class="skill-item" [colspan]="1" [rowspan]="1">
+              <span>Resilience</span>
             </mat-grid-tile>
             <mat-grid-tile [colspan]="1" [rowspan]="1">
               <mat-icon class="green">circle</mat-icon>
@@ -115,8 +148,8 @@
             </mat-grid-tile>
           </mat-grid-list>
           <mat-grid-list cols="2" rowHeight="50px">
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-              Audacity
+            <mat-grid-tile class="skill-item" [colspan]="1" [rowspan]="1">
+              <span>Audacity</span>
             </mat-grid-tile>
             <mat-grid-tile [colspan]="1" [rowspan]="1">
               <mat-icon class="green">circle</mat-icon>
@@ -127,7 +160,9 @@
             </mat-grid-tile>
           </mat-grid-list>
           <mat-grid-list cols="2" rowHeight="50px">
-            <mat-grid-tile [colspan]="1" [rowspan]="1"> Courage </mat-grid-tile>
+            <mat-grid-tile class="skill-item" [colspan]="1" [rowspan]="1">
+              <span>Courage</span>
+            </mat-grid-tile>
             <mat-grid-tile [colspan]="1" [rowspan]="1">
               <mat-icon class="green">circle</mat-icon>
               <mat-icon class="green">circle</mat-icon>
@@ -137,8 +172,8 @@
             </mat-grid-tile>
           </mat-grid-list>
           <mat-grid-list cols="2" rowHeight="50px">
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-              Integrity
+            <mat-grid-tile class="skill-item" [colspan]="1" [rowspan]="1">
+              <span>Integrity</span>
             </mat-grid-tile>
             <mat-grid-tile [colspan]="1" [rowspan]="1">
               <mat-icon class="green">circle</mat-icon>
@@ -150,15 +185,23 @@
           </mat-grid-list>
           <mat-grid-list cols="1" rowHeight="200px">
             <mat-grid-tile [colspan]="1" [rowspan]="1">
-              <a style="width: 85%; height: 45px"
-                href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/114210833694058402065790639498595590319781380477003379102980811108934020497409">
-                <button mat-raised-button color="accent" style="width: 100%; height: 100%">
+              <a
+                style="width: 85%; height: 45px"
+                href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/114210833694058402065790639498595590319781380477003379102980811108934020497409"
+              >
+                <button
+                  mat-raised-button
+                  color="accent"
+                  style="width: 100%; height: 100%"
+                >
                   <img src=" ../assets/ReplyCoin.png" class="btn-icon" />
                   <!-- <mat-icon>currency_exchange</mat-icon> -->
-                  <span style="padding: 10px; padding-left: 20px; font-size: 18px">Trade Wolverine</span>
+                  <span
+                    style="padding: 10px; padding-left: 20px; font-size: 18px"
+                    >Trade Wolverine</span
+                  >
                 </button>
               </a>
-
             </mat-grid-tile>
           </mat-grid-list>
         </mat-card-content>
