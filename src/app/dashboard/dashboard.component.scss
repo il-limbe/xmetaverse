@@ -1,7 +1,7 @@
 .header {
   margin: 0 13px;
   height: 60px;
-  background-color: rgb(25, 159, 30);
+  background-color: #00b140;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   display: flex;
@@ -15,6 +15,11 @@
     color: #fff;
     font-size: 32px !important;
   }
+}
+
+.btn-icon {
+  height: 30px;
+  width: auto;
 }
 
 .grid-container {

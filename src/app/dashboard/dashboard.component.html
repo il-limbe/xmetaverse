@@ -7,7 +7,7 @@
       <mat-card class="dashboard-card">
         <mat-card-header>
           <mat-card-title>
-            Skills
+            <span style="font-size: 22px">Skills</span>
             <button
               mat-icon-button
               class="more-button"
@@ -24,14 +24,12 @@
         </mat-card-header>
         <mat-card-content class="dashboard-card-content">
           <mat-grid-list cols="2" rowHeight="50px">
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-            </mat-grid-tile>
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1"> </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1"> </mat-grid-tile>
           </mat-grid-list>
           <mat-grid-list cols="2" rowHeight="50px">
             <mat-grid-tile [colspan]="1" [rowspan]="1">
-              Strenght
+              Strength
             </mat-grid-tile>
             <mat-grid-tile [colspan]="1" [rowspan]="1">
               <mat-icon class="green">circle</mat-icon>
@@ -90,9 +88,7 @@
             </mat-grid-tile>
           </mat-grid-list>
           <mat-grid-list cols="2" rowHeight="50px">
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-              Courage
-            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1"> Courage </mat-grid-tile>
             <mat-grid-tile [colspan]="1" [rowspan]="1">
               <mat-icon class="green">circle</mat-icon>
               <mat-icon class="green">circle</mat-icon>
@@ -115,9 +111,16 @@
           </mat-grid-list>
           <mat-grid-list cols="1" rowHeight="200px">
             <mat-grid-tile [colspan]="1" [rowspan]="1">
-              <button mat-raised-button color="accent">
-                <mat-icon>currency_exchange</mat-icon>
-                TRADE THE HERO
+              <button
+                mat-raised-button
+                color="accent"
+                style="width: 85%; height: 45px"
+              >
+                <img src="../assets/ReplyCoin.png" class="btn-icon" />
+                <!-- <mat-icon>currency_exchange</mat-icon> -->
+                <span style="padding: 10px; padding-left: 20px; font-size: 18px"
+                  >Trade Wolverine</span
+                >
               </button>
             </mat-grid-tile>
           </mat-grid-list>
@@ -128,7 +131,7 @@
       <mat-card class="dashboard-card">
         <mat-card-header>
           <mat-card-title>
-            Wolverine
+            <span style="font-size: 22px">Wolverine</span>
             <button
               mat-icon-button
               class="more-button"
